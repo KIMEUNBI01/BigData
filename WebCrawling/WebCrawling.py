@@ -4,7 +4,7 @@ import pandas as pd
 
 def kyochon_store(result):
     for sido in range(1, 18):
-      for gu in range(1, 46):
+      for gu in range(1, 45):
         try:
           kyochon_url = 'http://www.kyochon.com/shop/domestic.asp?txtsearch=&sido1=%s&sido2=%s' % (sido, gu)
           html = urllib.request.urlopen(kyochon_url)
